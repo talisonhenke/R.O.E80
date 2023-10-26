@@ -1,0 +1,97 @@
+.cover-header
+{
+    height: 200px;
+    margin-bottom: 90px;
+}
+.cover-header .img-fluid
+{
+    width: 100%;
+    min-width: 200px;
+    height: inherit;
+    background-size: cover;
+}
+
+body {
+    height: 100vh;
+}
+
+.gradient-background {
+    background: linear-gradient(300deg,deepskyblue,darkviolet,blue);
+    background-size: 180% 180%;
+    animation: gradient-animation 15s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+.icon-facebook{
+    /* color: #3B5998; */
+}
+
+.icon-youtube{
+    /* color: #fe302f; */
+}
+
+.icon-instagram {
+    /* background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text; */
+            /* Also define standard property for compatibility */
+            /* background-clip: text;
+    -webkit-text-fill-color: transparent; */
+    /* change this to change the size*/
+    /* font-size: 200px;  */
+    
+}
+
+.social-icons-size{
+ /* change this to change the size*/
+    font-size: 50px;
+    color: white;
+}
+.social-icons-size:hover{
+    color: rgb(14, 187, 14);
+}
+
+.contact-button{
+    font-weight: bold;
+    font-size: 18px;
+ width: 100%;
+}
+
+.contact-button:hover{
+    background-color: rgb(14, 187, 14);
+   }
+
+.profile-image{
+position: relative;
+top: -40%;
+background-color: rgb(0, 0, 0);
+width: 100px;
+height: 150px;
+}
+
+.profile-image .img-profile{
+    width: 50%;
+    height: auto;
+}
+
+.col-form-label{
+  font-weight: bolder;
+}
+
+/* .bi{
+  font-size: 50px;
+} */
+
+.text-page{
+  font-size: 18px;
+}
