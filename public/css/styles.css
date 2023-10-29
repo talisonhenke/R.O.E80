@@ -3,7 +3,7 @@
     height: 200px;
     margin-bottom: 90px;
 }
-.cover-header .img-fluid
+.cover-header .cover-image
 {
     width: 100%;
     min-width: 200px;
@@ -75,12 +75,12 @@ body {
 position: relative;
 top: -40%;
 background-color: rgb(0, 0, 0);
-width: 100px;
+width: 150px;
 height: 150px;
 }
 
 .profile-image .img-profile{
-    width: 50%;
+    width: 100%;
     height: auto;
 }
 

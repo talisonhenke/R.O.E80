@@ -13,10 +13,10 @@
 
     </head>
     <body class="gradient-background">
-        <header class="cover-header text-center">
-            <img class="img-fluid" src="https://vgprojetos.com/wp-content/uploads/2022/05/P8-IMG-1.jpg.webp" alt="New York">
+        <header class="cover-header text-center mx-auto d-block col-sm-12 col-md-8 col-lg-8 col-xl-8">
+            <img class="img-fluid cover-image" src="https://vgprojetos.com/wp-content/uploads/2022/05/P8-IMG-1.jpg.webp" alt="New York">
             <div class="profile-image rounded-circle d-inline-flex justify-content-center">
-                <img class="img-profile rounded-circle img-fluid" src="images/vecteezy_default-profile-account-unknown-icon-black-silhouette_20765399.jpg" alt="">
+                <img class="img-profile rounded-circle" src="images/vecteezy_default-profile-account-unknown-icon-black-silhouette_20765399.jpg" alt="">
             </div>
         </header>
         <div class="container mx-auto d-block">
