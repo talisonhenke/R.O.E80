@@ -53,19 +53,31 @@
                     <form>
                     <div class="mb-3">
                         <label for="name" class="col-form-label">Nome:</label>
-                        <input type="text" required placeholder="Digite seu nome..." class="form-control" id="name">
+                        <div class="d-flex">
+                            <i class="bi bi-person input-icons p-2"></i>
+                            <input type="text" required placeholder="Digite seu nome..." class="form-control" name="name" id="name">
+                        </div>
                     </div>
                     <div class="mb-3">
                         <label for="email" class="col-form-label">E-mail:</label>
-                        <input type="text" required placeholder="Digite seu email..." class="form-control" id="email">
+                        <div class="d-flex">
+                            <i class="bi bi-at input-icons p-2"></i>
+                            <input type="text" required placeholder="Digite seu email..." class="form-control" name="email" id="email">
+                        </div>
                     </div>
                     <div class="mb-3">
                         <label for="email" class="col-form-label">Telefone:</label>
-                        <input type="tel" maxlength="14" required data-js="phone"  placeholder="Ex. (xx)xxxx-xxxx" class="form-control" id="telefone">
+                        <div class="d-flex">
+                            <i class="bi bi-telephone input-icons p-2"></i>
+                            <input type="tel" maxlength="14" required data-js="phone"  placeholder="Ex. (xx)xxxx-xxxx" class="form-control" name="telefone" id="telefone">
+                        </div>
                     </div>
                     <div class="mb-3">
-                        <label for="message-text" class="col-form-label">Mensagem:</label>
-                        <textarea class="form-control" id="message-text" style="height: 300px" placeholder="Descreva suas preferências e necessidades para que eu possa oferecer as melhores opções..."></textarea>
+                        <label for="messageText" class="col-form-label">Mensagem:</label>
+                        <div class="d-flex">
+                            <i class="bi bi-chat-square-text input-icons p-2"></i>
+                            <textarea class="form-control" name="messageText" id="messageText" style="height: 300px" placeholder="Descreva suas preferências e necessidades para que eu possa oferecer as melhores opções..."></textarea>
+                        </div>
                     </div>
                     </form>
                 </div>
