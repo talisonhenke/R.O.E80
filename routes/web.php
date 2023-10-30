@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\SendmailController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,3 +22,8 @@ Route::get('/', function () {
 Route::get('/example2', function () {
     return view('example2');
 });
+
+//mail routes
+Route::resources([
+    'email' => SendmailController::class
+]);

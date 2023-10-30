@@ -50,7 +50,8 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form>
+                    <form class="needs-validation" id="mail-data" action="{{ route('email.store') }}" method="post">
+                        @csrf
                     <div class="mb-3">
                         <label for="name" class="col-form-label">Nome:</label>
                         <div class="d-flex">
@@ -83,7 +84,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                    <button type="button" class="btn btn-primary">Enviar mensagem</button>
+                    <button type="submit" form="mail-data" class="btn btn-primary">Enviar mensagem</button>
                 </div>
                 </div>
             </div>
@@ -98,25 +99,23 @@
     <script>
         const formato = {
 
-        phone (value) {
+            phone (value) {
 
-        return value
+            return value
 
-            .replace(/\D/g, '')
+                .replace(/\D/g, '')
 
-            .replace(/(\d{2})(\d)/, '($1)$2')
+                .replace(/(\d{2})(\d)/, '($1)$2')
 
-            .replace(/(\d{4})(\d)/, '$1-$2')
+                .replace(/(\d{4})(\d)/, '$1-$2')
 
-            .replace(/(\d{4})-(\d)(\d{4})/, '$1$2-$3')
+                .replace(/(\d{4})-(\d)(\d{4})/, '$1$2-$3')
 
-            .replace(/(-\d{4})\d+?$/, '$1')
+                .replace(/(-\d{4})\d+?$/, '$1')
+
+            }
 
         }
-
-        }
-
-
 
         document.querySelectorAll('input').forEach(($input) => {
 
