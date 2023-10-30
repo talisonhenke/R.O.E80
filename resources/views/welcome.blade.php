@@ -13,13 +13,17 @@
 
     </head>
     <body class="gradient-background">
-        <header class="cover-header text-center mx-auto d-block col-sm-12 col-md-8 col-lg-8 col-xl-8">
-            <img class="img-fluid cover-image" src="https://vgprojetos.com/wp-content/uploads/2022/05/P8-IMG-1.jpg.webp" alt="New York">
-            <div class="profile-image rounded-circle d-inline-flex justify-content-center">
-                <img class="img-profile rounded-circle" src="images/vecteezy_default-profile-account-unknown-icon-black-silhouette_20765399.jpg" alt="">
+        <header class="d-block col-12">
+            <div class="cover-header-blur d-block mx-auto col-12"></div>
+            <div class="cover-header text-center mx-auto d-block col-sm-12 col-md-8 col-lg-8 col-xl-8">
+                <div class="divtest"></div>
+                {{-- <img class="img-fluid cover-image" src="https://www.boredpanda.com/blog/wp-content/uploads/2023/07/26-64b7ec5f9972b__700.jpg" alt="New York"> --}}
+                <div class="profile-image rounded-circle d-inline-flex justify-content-center">
+                    <img class="img-profile rounded-circle" src="images/vecteezy_default-profile-account-unknown-icon-black-silhouette_20765399.jpg" alt="">
+                </div>
             </div>
         </header>
-        <div class="container mx-auto d-block">
+        <div class="container mx-auto d-block main-content">
             <div class="about mx-auto d-block col-sm-12 col-md-6 col-lg-6 col-xl-6">
                 <h2 class="name text-center text-white">Rafael Oliveira Erben</h2>
                 <p class="skill text-center text-white"><i class="bi bi-houses"></i> Corretor e avaliador de imóveis</p>
@@ -50,34 +54,59 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form class="needs-validation" id="mail-data" action="{{ route('email.store') }}" method="post">
+                    {{-- <form class="needs-validation" id="mail-data" action="{{ route('email.store') }}" method="post"> --}}
+                    <form class="needs-validation" id="mail-data" action="{{ route('email.store') }}" method="post" novalidate>
                         @csrf
                     <div class="mb-3">
                         <label for="name" class="col-form-label">Nome:</label>
-                        <div class="d-flex">
-                            <i class="bi bi-person input-icons p-2"></i>
+                        <div class="input-group">
+                            <i class="bi bi-person input-icons p-2 input-group-text"></i>
                             <input type="text" required placeholder="Digite seu nome..." class="form-control" name="name" id="name">
+                            <div class="valid-feedback valid-message">
+                                Ótimo!
+                            </div>
+                            <div class="invalid-feedback invalid-message">
+                                Insira seu nome nesse campo.
+                            </div>
                         </div>
                     </div>
                     <div class="mb-3">
                         <label for="email" class="col-form-label">E-mail:</label>
-                        <div class="d-flex">
-                            <i class="bi bi-at input-icons p-2"></i>
+                        <div class="input-group">
+                            <i class="bi bi-at input-icons p-2 input-group-text"></i>
                             <input type="text" required placeholder="Digite seu email..." class="form-control" name="email" id="email">
+                            <div class="valid-feedback valid-message">
+                                Ótimo!
+                            </div>
+                            <div class="invalid-feedback invalid-message">
+                                Insira seu e-mail nesse campo.
+                            </div>
                         </div>
                     </div>
                     <div class="mb-3">
                         <label for="email" class="col-form-label">Telefone:</label>
-                        <div class="d-flex">
-                            <i class="bi bi-telephone input-icons p-2"></i>
+                        <div class="input-group">
+                            <i class="bi bi-telephone input-icons p-2 input-group-text"></i>
                             <input type="tel" maxlength="14" required data-js="phone"  placeholder="Ex. (xx)xxxx-xxxx" class="form-control" name="telefone" id="telefone">
+                            <div class="valid-feedback valid-message">
+                                Ótimo!
+                            </div>
+                            <div class="invalid-feedback invalid-message">
+                                Insira seu telefone nesse campo.
+                            </div>
                         </div>
                     </div>
                     <div class="mb-3">
                         <label for="messageText" class="col-form-label">Mensagem:</label>
-                        <div class="d-flex">
-                            <i class="bi bi-chat-square-text input-icons p-2"></i>
-                            <textarea class="form-control" name="messageText" id="messageText" style="height: 300px" placeholder="Descreva suas preferências e necessidades para que eu possa oferecer as melhores opções..."></textarea>
+                        <div class="input-group">
+                            <i class="bi bi-chat-square-text input-icons p-2 input-group-text"></i>
+                            <textarea class="form-control" name="messageText" id="messageText" style="height: 300px" placeholder="Descreva suas preferências e necessidades para que eu possa oferecer as melhores opções..." required></textarea>
+                            <div class="valid-feedback valid-message">
+                                Ótimo!
+                            </div>
+                            <div class="invalid-feedback invalid-message">
+                                Insira sua mensagem nesse campo.
+                            </div>
                         </div>
                     </div>
                     </form>
@@ -95,38 +124,6 @@
         </div>
         <footer class=""></footer>
     </body>
-    <script type="text/javascript" src="assets/js/cover_background.js"></script>
-    <script>
-        const formato = {
-
-            phone (value) {
-
-            return value
-
-                .replace(/\D/g, '')
-
-                .replace(/(\d{2})(\d)/, '($1)$2')
-
-                .replace(/(\d{4})(\d)/, '$1-$2')
-
-                .replace(/(\d{4})-(\d)(\d{4})/, '$1$2-$3')
-
-                .replace(/(-\d{4})\d+?$/, '$1')
-
-            }
-
-        }
-
-        document.querySelectorAll('input').forEach(($input) => {
-
-        const field = $input.dataset.js
-
-        $input.addEventListener('input', (e) => {
-
-        e.target.value = formato[field](e.target.value)
-
-        }, false)
-
-        })
-    </script>
+    <script type="text/javascript" src="js/phone.js"></script>
+    <script type="text/javascript" src="js/validationForms.js"></script>
 </html>
