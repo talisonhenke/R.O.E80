@@ -35,8 +35,8 @@ class SendmailController extends Controller
         ];
 
         // Mail::to($email)->send(new Sendmail($data)); // Enviar para o email preenchido no campo
-        // Mail::to('roesite@thenkedeploytests.com.br')->send(new Sendmail($data));
-        Mail::to('rafaelroe3@gmail.com')->send(new Sendmail($data));
+        Mail::to('roesite@thenkedeploytests.com.br')->send(new Sendmail($data));
+        //Mail::to('rafaelroe3@gmail.com')->send(new Sendmail($data));
         dd('email enviado com sucesso!');
     }
 }

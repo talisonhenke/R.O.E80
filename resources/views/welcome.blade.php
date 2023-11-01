@@ -55,7 +55,7 @@
                 </div>
                 <div class="modal-body">
                     {{-- <form class="needs-validation" id="mail-data" action="{{ route('email.store') }}" method="post"> --}}
-                    <form class="needs-validation" id="mail-data" action="{{ route('email.store') }}" method="post" novalidate>
+                    <form class="needs-validation" id="mail-data" name="mail-data" action="{{ route('email.store') }}" method="post" novalidate>
                         @csrf
                     <div class="mb-3">
                         <label for="name" class="col-form-label">Nome:</label>
@@ -74,7 +74,7 @@
                         <label for="email" class="col-form-label">E-mail:</label>
                         <div class="input-group">
                             <i class="bi bi-at input-icons p-2 input-group-text"></i>
-                            <input type="text" required placeholder="Digite seu email..." class="form-control" name="email" id="email">
+                            <input type="email" required placeholder="Digite seu email..." class="form-control" name="email" id="email">
                             <div class="valid-feedback valid-message">
                                 Ótimo!
                             </div>
@@ -118,9 +118,9 @@
                 </div>
             </div>
             </div>
-            <div class="text-end">
+            {{-- <div class="text-end">
                 <a href="/example2"><button class='btn btn-warning  '> Exemplo 2 </button></a>
-            </div>
+            </div> --}}
         </div>
         <footer class=""></footer>
     </body>
