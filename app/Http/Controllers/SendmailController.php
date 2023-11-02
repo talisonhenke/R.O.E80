@@ -8,6 +8,8 @@ use Illuminate\Support\Facades\Mail;
 
 use App\Mail\Sendmail;
 
+use App\Mail\SendMailConfirmation;
+
 class SendmailController extends Controller
 {
     public function clean($string) {
@@ -19,6 +21,16 @@ class SendmailController extends Controller
         // TODO: trazer o alert para o try/cat e criar uma nova classe que envia email de confirmação para o cliente
         try {
             Mail::to('roesite@thenkedeploytests.com.br')->send(new Sendmail($formData));
+               
+        } catch (Exception $e) {
+            echo '<script>alert("Seu email não foi enviado!\n
+            Certifique-se de preencher todos dados corretamente!")</script>';
+        }
+    }
+    public function mailDataConfirm($formData){
+        // TODO: trazer o alert para o try/cat
+        try {
+            Mail::to($formData['email'])->send(new SendMailConfirmation($formData)); // Enviar para o email preenchido no campo
                
         } catch (Exception $e) {
             echo '<script>alert("Seu email não foi enviado!\n
@@ -48,6 +60,7 @@ class SendmailController extends Controller
         $message = "Sua mensagem foi enviada! Te enviei um email de confirmação! Verfique sua caixa de entrada. Obrigado!";
 
         $this->mailData($data);
+        $this->mailDataConfirm($data);
 
         return redirect()->back()->with('alert',$message);
         // Mail::to($email)->send(new Sendmail($data)); // Enviar para o email preenchido no campo
