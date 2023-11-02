@@ -145,4 +145,11 @@ height: 150px;
       height: 150px;
       margin-bottom: 62px;
   }
+  .divtest
+  {
+    height: inherit;
+    background-image: url('https://www.boredpanda.com/blog/wp-content/uploads/2023/07/26-64b7ec5f9972b__700.jpg');
+    background-size: 100% 150%;
+    background-position: center;
+  }
 }
