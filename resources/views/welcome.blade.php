@@ -12,9 +12,7 @@
         <title>R.O.E</title>
 
     </head>
-    @php
-        session_start();
-    @endphp
+    
     <body class="gradient-background">
         <header class="d-block col-12">
             <div class="cover-header-blur d-block mx-auto col-12"></div>
