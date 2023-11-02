@@ -13,7 +13,18 @@ class SendmailController extends Controller
     public function clean($string) {
         $string = str_replace('-', '', $string); // Replaces all hyphens with nothing.
         return preg_replace('/[^A-Za-z0-9\-]/', '', $string); // Removes special chars.
-     }
+    }
+
+    public function mailData($formData){
+        // TODO: trazer o alert para o try/cat e criar uma nova classe que envia email de confirmação para o cliente
+        try {
+            Mail::to('roesite@thenkedeploytests.com.br')->send(new Sendmail($formData));
+               
+        } catch (Exception $e) {
+            echo '<script>alert("Seu email não foi enviado!\n
+            Certifique-se de preencher todos dados corretamente!")</script>';
+        }
+    }
 
     public function store(Request $request)
 
@@ -34,9 +45,13 @@ class SendmailController extends Controller
             'onlynumbers' => $onlynumbers
         ];
 
+        $message = "Sua mensagem foi enviada! Te enviei um email de confirmação! Verfique sua caixa de entrada. Obrigado!";
+
+        $this->mailData($data);
+
+        return redirect()->back()->with('alert',$message);
         // Mail::to($email)->send(new Sendmail($data)); // Enviar para o email preenchido no campo
-        Mail::to('roesite@thenkedeploytests.com.br')->send(new Sendmail($data));
         //Mail::to('rafaelroe3@gmail.com')->send(new Sendmail($data));
-        dd('email enviado com sucesso!');
+
     }
 }

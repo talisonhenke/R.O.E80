@@ -12,6 +12,9 @@
         <title>R.O.E</title>
 
     </head>
+    @php
+        session_start();
+    @endphp
     <body class="gradient-background">
         <header class="d-block col-12">
             <div class="cover-header-blur d-block mx-auto col-12"></div>
@@ -126,4 +129,13 @@
     </body>
     <script type="text/javascript" src="js/phone.js"></script>
     <script type="text/javascript" src="js/validationForms.js"></script>
+
+    <script>
+        var msg = '{{Session::get('alert')}}';
+        var exist = '{{Session::has('alert')}}';
+        if(exist){
+          alert(msg);
+        }
+      </script>
+
 </html>
