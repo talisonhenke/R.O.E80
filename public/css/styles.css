@@ -9,7 +9,7 @@ header{
 .divtest{
   height: inherit;
   background-image: url('https://www.boredpanda.com/blog/wp-content/uploads/2023/07/26-64b7ec5f9972b__700.jpg');
-  background-size: 150% 150%;
+  background-size: 100% 400%;
   background-position: center;
 }
 
@@ -17,7 +17,7 @@ header{
   background-image: url('https://i.pinimg.com/originals/b4/9f/9d/b49f9d5f0f36c8ace925a34766f48d50.jpg');
   background-size: cover;
   background-position: 0% 51%;
-  height: 200px;
+  height: 160px;
   z-index: -1;
   position: absolute;
   filter: sepia(100%);
@@ -25,7 +25,7 @@ header{
 
 .cover-header
 {
-    height: 200px;
+    height: 160px;
     margin-bottom: 80px;
 }
 .cover-header .cover-image
@@ -89,7 +89,7 @@ body {
 .contact-button{
     font-weight: bold;
     font-size: 18px;
-    width: 100%;
+    width: 70%;
 }
 
 .contact-button:hover{
@@ -98,7 +98,7 @@ body {
 
 .profile-image{
 position: relative;
-top: -40%;
+top: -50%;
 background-color: rgb(0, 0, 0);
 width: 150px;
 height: 150px;
@@ -107,6 +107,9 @@ height: 150px;
 .profile-image .img-profile{
     width: 100%;
     height: auto;
+    background-image: url('../images/rafaelprofile2.jpg');
+    background-size: cover;
+    background-position: 50% 20%;
 }
 
 .col-form-label{
@@ -119,6 +122,12 @@ height: 150px;
 
 .text-page{
   font-size: 18px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.ouclass{
+  margin: 5px 0 5px 0;
 }
 
 .input-icons{
@@ -132,7 +141,7 @@ height: 150px;
 @media only screen and (max-width: 480px) {
   .profile-image
   {
-    top: -44%;
+    top: -50%;
     width: 120px;
     height: 120px;
   }
@@ -142,14 +151,19 @@ height: 150px;
     height: auto;
   }
   .cover-header, .cover-header-blur{
-      height: 150px;
+      height: 120px;
       margin-bottom: 62px;
   }
   .divtest
   {
-    height: inherit;
-    background-image: url('https://www.boredpanda.com/blog/wp-content/uploads/2023/07/26-64b7ec5f9972b__700.jpg');
     background-size: 100% 150%;
-    background-position: center;
+  }
+  .text-page
+  {
+    width: 82%;
+  }
+  .contact-button
+  {
+    width: 82%;
   }
 }

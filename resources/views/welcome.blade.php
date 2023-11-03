@@ -20,7 +20,7 @@
                 <div class="divtest"></div>
                 {{-- <img class="img-fluid cover-image" src="https://www.boredpanda.com/blog/wp-content/uploads/2023/07/26-64b7ec5f9972b__700.jpg" alt="New York"> --}}
                 <div class="profile-image rounded-circle d-inline-flex justify-content-center">
-                    <img class="img-profile rounded-circle" src="images/vecteezy_default-profile-account-unknown-icon-black-silhouette_20765399.jpg" alt="">
+                    <div class="img-profile rounded-circle"></div>
                 </div>
             </div>
         </header>
@@ -28,7 +28,7 @@
             <div class="about mx-auto d-block col-sm-12 col-md-6 col-lg-6 col-xl-6">
                 <h2 class="name text-center text-white">Rafael Oliveira Erben</h2>
                 <p class="skill text-center text-white"><i class="bi bi-houses"></i> Corretor e avaliador de imóveis</p>
-                <p class="skill text-center text-white text-page">Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto </p>
+                {{-- <p class="skill text-center text-white text-page"></p> --}}
 
             </div>
             <div class="social-media text-center mx-auto">
@@ -42,9 +42,9 @@
             </div>
             <div class="contact text-center col-sm-12 col-md-6 col-lg-6 col-xl-6 mx-auto">
                 <a href="https://wa.me/5553984734353" target="_blank" class="text-decoration-none text-black"><button type="button" class="btn btn-light contact-button">Fale comigo no whatsapp!</button></a>
-                <h2 class="text-white mt-2">OU</h2>
-                <p class="text-white my-2 text-page">Cadastre-se que eu mesmo entrarei em contato com você o quanto antes.</p>
-                <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-light contact-button mb-5">Envie-me um e-mail!</button>
+                <h2 class="text-white ouclass">OU</h2>
+                <p class="text-white my-1 text-page">Cadastre-se que eu mesmo entrarei em contato com você o quanto antes.</p>
+                <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-light contact-button mb-4">Envie-me um e-mail!</button>
             </div>
 
             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
