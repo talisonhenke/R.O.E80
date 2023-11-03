@@ -131,7 +131,7 @@ height: 150px;
 }
 
 .ouclass{
-  margin: 5px 0 5px 0;
+  margin: 12px 0 5px 0;
 }
 
 .input-icons{
@@ -156,7 +156,7 @@ height: 150px;
   }
   .cover-header, .cover-header-blur{
       height: 120px;
-      margin-bottom: 62px;
+      margin-bottom: 70px;
   }
   .divtest
   {
@@ -169,5 +169,12 @@ height: 150px;
   .contact-button
   {
     width: 82%;
+  }
+  .skill {
+    margin-bottom: 5px;
+  }
+  .social-media
+  {
+    margin-bottom: -2px;
   }
 }
