@@ -14,13 +14,14 @@ header{
 }
 
 .cover-header-blur{
-  background-image: url('https://i.pinimg.com/originals/b4/9f/9d/b49f9d5f0f36c8ace925a34766f48d50.jpg');
+  background-image: url('https://www.boredpanda.com/blog/wp-content/uploads/2023/07/26-64b7ec5f9972b__700.jpg');
   background-size: cover;
-  background-position: 0% 51%;
+  background-position: 0 52%;
   height: 160px;
   z-index: -1;
   position: absolute;
-  filter: sepia(100%);
+  filter: contrast(300%);
+  filter: brightness(90%);
 }
 
 .cover-header
