@@ -43,8 +43,8 @@
             <div class="contact text-center col-sm-12 col-md-6 col-lg-6 col-xl-6 mx-auto">
                 <a href="https://wa.me/5553984734353" target="_blank" class="text-decoration-none text-black"><button type="button" class="btn btn-light contact-button">Fale comigo no whatsapp!</button></a>
                 <h2 class="text-white ouclass">OU</h2>
-                <p class="text-white my-1 text-page">Cadastre-se que eu mesmo entrarei em contato com você o quanto antes.</p>
-                <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-light contact-button mb-4">Envie-me um e-mail!</button>
+                <p class="text-white text-page">Cadastre-se que eu mesmo entrarei em contato com você o quanto antes.</p>
+                <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-light contact-button mb-4 mt-2">Envie-me um e-mail!</button>
             </div>
 
             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">

@@ -131,7 +131,7 @@ height: 150px;
 }
 
 .ouclass{
-  margin: 12px 0 5px 0;
+  margin: 12px 0 3px 0;
 }
 
 .input-icons{
@@ -165,6 +165,7 @@ height: 150px;
   .text-page
   {
     width: 82%;
+    margin-bottom: 3px;
   }
   .contact-button
   {
@@ -175,6 +176,6 @@ height: 150px;
   }
   .social-media
   {
-    margin-bottom: -2px;
+    margin-bottom: -3px;
   }
 }
