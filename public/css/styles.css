@@ -94,7 +94,7 @@ body {
 .contact-button{
     font-weight: bold;
     font-size: 18px;
-    width: 70%;
+    width: 55%;
 }
 
 .contact-button:hover{
@@ -127,7 +127,7 @@ height: 150px;
 
 .text-page{
   font-size: 18px;
-  width: 70%;
+  width: 55%;
   margin: 0 auto;
 }
 
