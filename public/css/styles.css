@@ -180,3 +180,23 @@ height: 150px;
     margin-bottom: -3px;
   }
 }
+@media only screen and (min-width: 1200px) {
+  .contact-button
+  {
+    width: 55%;
+  }
+  .text-page
+  {
+    width: 55%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .contact-button
+  {
+    width: 55%;
+  }
+  .text-page
+  {
+    width: 65%;
+  }
+}

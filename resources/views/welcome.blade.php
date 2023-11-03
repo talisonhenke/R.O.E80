@@ -25,7 +25,7 @@
             </div>
         </header>
         <div class="container mx-auto d-block main-content">
-            <div class="about mx-auto d-block col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <div class="about mx-auto d-block col-sm-12 col-md-8 col-lg-6 col-xl-6">
                 <h2 class="name text-center text-white">Rafael Oliveira Erben</h2>
                 <p class="skill text-center text-white"><i class="bi bi-houses"></i> Corretor e avaliador de imóveis</p>
                 {{-- <p class="skill text-center text-white text-page"></p> --}}
@@ -40,7 +40,7 @@
                     <!-- <li><a href="#"> <i class="bi bi-youtube icon-youtube social-icons-size p-2"></i></a></li> -->
                 </ul>
             </div>
-            <div class="contact text-center col-sm-12 col-md-6 col-lg-6 col-xl-6 mx-auto">
+            <div class="contact text-center col-sm-12 col-md-8 col-lg-6 col-xl-6 mx-auto">
                 <a href="https://wa.me/5553984734353" target="_blank" class="text-decoration-none text-black"><button type="button" class="btn btn-light contact-button">Fale comigo no whatsapp!</button></a>
                 <h2 class="text-white ouclass">OU</h2>
                 <p class="text-white text-page">Cadastre-se que eu mesmo entrarei em contato com você o quanto antes.</p>
