@@ -27,7 +27,7 @@
         <div class="container mx-auto d-block main-content">
             <div class="about mx-auto d-block col-sm-12 col-md-8 col-lg-6 col-xl-6">
                 <h2 class="name text-center text-white">Rafael Oliveira Erben</h2>
-                <p class="skill text-center text-white"><i class="bi bi-houses"></i> Corretor e avaliador de imóveis</p>
+                <p class="skill text-center text-white fw-lighte"><i class="bi bi-houses"></i> Corretor e avaliador de imóveis</p>
                 {{-- <p class="skill text-center text-white text-page"></p> --}}
 
             </div>
@@ -36,12 +36,12 @@
                     <li><a href="https://www.facebook.com/profile.php?id=100003666284698" target="_blank"> <i class="bi bi-facebook icon-facebook social-icons-size p-2"></i></a></li>
                     <li><a href="https://www.instagram.com/rafael.erben/" target="_blank"> <i class="bi bi-instagram icon-instagram social-icons-size p-2"></i></a></li>
                     <li><a href="#"> <i class="bi bi-linkedin icon-youtube social-icons-size p-2"></i></a></li>
-                    <li><a href="https://wa.me/5553984734353" target="_blank"> <i class="bi bi-whatsapp icon-youtube social-icons-size p-2"></i></a></li>
+                    <li><a href="https://wa.me/5553984734353?text=Ol%C3%A1,%20Rafael!%20Tudo%20bem?%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20apartamentos%20e%20casas%20do%20programa%20Minha%20casa,%20Miha%20vida." target="_blank"> <i class="bi bi-whatsapp icon-youtube social-icons-size p-2"></i></a></li>
                     <!-- <li><a href="#"> <i class="bi bi-youtube icon-youtube social-icons-size p-2"></i></a></li> -->
                 </ul>
             </div>
             <div class="contact text-center col-sm-12 col-md-8 col-lg-6 col-xl-6 mx-auto">
-                <a href="https://wa.me/5553984734353" target="_blank" class="text-decoration-none text-black"><button type="button" class="btn btn-light contact-button gradient-button">Fale comigo no whatsapp!</button></a>
+                <a href="hhttps://wa.me/5553984734353?text=Ol%C3%A1,%20Rafael!%20Tudo%20bem?%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20apartamentos%20e%20casas%20do%20programa%20Minha%20casa,%20Miha%20vida." target="_blank" class="text-decoration-none text-black"><button type="button" class="btn btn-light contact-button gradient-button">Fale comigo no whatsapp!</button></a>
                 <h2 class="text-white ouclass">OU</h2>
                 <p class="text-white text-page">Cadastre-se que eu mesmo entrarei em contato com você o quanto antes.</p>
                 <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-light contact-button gradient-button mb-4 mt-2">Envie-me um e-mail!</button>
@@ -135,5 +135,22 @@
           alert(msg);
         }
       </script>
+      <!-- Meta Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '805908787767035');
+        fbq('track', 'PageView');
+        </script>
+        <noscript><img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=805908787767035&ev=PageView&noscript=1"
+        /></noscript>
+    <!-- End Meta Pixel Code -->
 
 </html>
