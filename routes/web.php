@@ -19,9 +19,6 @@ use App\Http\Controllers\SendmailController;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/example2', function () {
-    return view('example2');
-});
 
 //mail routes
 Route::resources([

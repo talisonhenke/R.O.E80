@@ -6,6 +6,11 @@ header{
   /* overflow: hidden; */
 }
 
+.modal-content{
+  background-image: url('../images/texture.jpg');
+  background-size: cover;
+}
+
 .divtest{
   height: inherit;
   background-image: url('https://www.boredpanda.com/blog/wp-content/uploads/2023/07/26-64b7ec5f9972b__700.jpg');
@@ -97,9 +102,15 @@ body {
     width: 70%;
 }
 
-.contact-button:hover{
-    background-color: rgb(14, 187, 14);
-   }
+.gradient-button {
+  background: linear-gradient(300deg,rgba(157, 255, 0, 0.7),rgba(253, 249, 0, 0.9),rgba(106, 218, 238, 0.9));
+  background-size: 200% 200%;
+  animation: gradient-animation 5s ease infinite;
+}
+
+.contact-button:hover, .gradient-button:hover{
+  background: #25D366;
+}
 
 .profile-image{
 position: relative;
