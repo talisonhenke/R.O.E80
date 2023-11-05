@@ -13,14 +13,14 @@ header{
 
 .divtest{
   height: inherit;
-  background-image: url('https://www.boredpanda.com/blog/wp-content/uploads/2023/07/26-64b7ec5f9972b__700.jpg');
+  background-image: url('../images/capa_site.jpg');
   background-size: 100% 400%;
   background-position: center;
   border-bottom: black solid 2px;
 }
 
 .cover-header-blur{
-  background-image: url('https://www.boredpanda.com/blog/wp-content/uploads/2023/07/26-64b7ec5f9972b__700.jpg');
+  background-image: url('../images/capa_site.jpg');
   background-size: cover;
   background-position: 0 52%;
   height: 160px;
@@ -91,11 +91,33 @@ body {
 
 .social-icons-size{
  /* change this to change the size*/
-    font-size: 35px;
+    font-size: 34px;
     color: white;
+    animation: pulse 5s infinite;
 }
+
+@keyframes pulse {
+	0% {
+		font-size: 34px;
+	}
+
+	70% {
+		font-size: 35px;
+	}
+
+	100% {
+		font-size: 34px;
+	}
+}
+
 .social-icons-size:hover{
-    color: rgb(14, 187, 14);
+  color: rgb(14, 187, 14);
+  animation: none;
+}
+
+.social-media
+{
+  height: 68.5px;
 }
 
 .contact-button{

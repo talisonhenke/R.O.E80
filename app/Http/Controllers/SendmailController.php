@@ -20,7 +20,7 @@ class SendmailController extends Controller
     public function mailData($formData){
         // TODO: trazer o alert para o try/cat e criar uma nova classe que envia email de confirmação para o cliente
         try {
-            Mail::to('rafaelroe3@gmail.com')->send(new Sendmail($formData));
+            Mail::to('roesite@thenkedeploytests.com.br')->send(new Sendmail($formData));
                
         } catch (Exception $e) {
             echo '<script>alert("Seu email não foi enviado!\n
@@ -46,6 +46,7 @@ class SendmailController extends Controller
         $telefone = $request->telefone;
         $onlynumbers = $request->telefone;
         $messageText = $request->messageText;
+        $targetClient = $request->targetClient;
 
         $onlynumbers = $this->clean($onlynumbers);
 
@@ -54,7 +55,8 @@ class SendmailController extends Controller
             'email' => $email,
             'telefone' => $telefone,
             'messageText' => $messageText,
-            'onlynumbers' => $onlynumbers
+            'onlynumbers' => $onlynumbers,
+            'targetClient' => $targetClient
         ];
 
         $message = "Sua mensagem foi enviada! Te enviei um email de confirmação! Verfique sua caixa de entrada. Obrigado!";

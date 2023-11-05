@@ -20,6 +20,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/minha-casa_minha-vida', function () {
+    return view('minha-casa_minha-vida');
+});
+
 //mail routes
 Route::resources([
     'email' => SendmailController::class

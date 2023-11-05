@@ -1,6 +1,7 @@
 <x-mail::message>
 # Mensagem de {{ $data['name'] }}
 
+<p>Campanha: {{ $data['targetClient'] }}</p>
 <p>Telefone: <strong>{{ $data['telefone'] }}</strong></p>
 <p>E-mail: <strong>{{ $data['email'] }}</strong></p>
 
