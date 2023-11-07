@@ -18,11 +18,20 @@ use App\Http\Controllers\SendmailController;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('welcome');
 
 Route::get('/minha-casa_minha-vida', function () {
     return view('minha-casa_minha-vida');
-});
+})->name('minha-casa_minha-vida');
+
+Route::get('/obrigado', function () {
+    return view('obrigado');
+})->name('obrigado');
+
+Route::get('/minha-casa_minha-vida_obrigado', function () {
+    return view('mmobrigado');
+})->name('minha-casa_minha-vida_obrigado');
+
 
 //mail routes
 Route::resources([
