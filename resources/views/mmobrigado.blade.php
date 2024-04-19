@@ -13,7 +13,7 @@
 
     </head>
     
-    <body class="gradient-background">
+    <body class="gradient-background_mcmv">
         <header class="d-block col-12">
             
         </header>

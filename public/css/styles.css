@@ -70,6 +70,24 @@ body {
     }
   }
 
+  .gradient-background_mcmv {
+    background: linear-gradient(300deg,rgb(55, 0, 255),rgb(0, 102, 42),rgb(92, 14, 0));
+    background-size: 200% 200%;
+    animation: gradient-animation 15s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
 .icon-facebook{
     /* color: #3B5998; */
 }
@@ -152,9 +170,9 @@ border: black solid 2px;
 .profile-image .img-profile{
     width: 100%;
     height: auto;
-    background-image: url('../images/rafaelprofile2.jpg');
+    background-image: url('../images/rafaelprofile1.jpg');
     background-size: cover;
-    background-position: 50% 20%;
+    background-position: 50% 30%;
 }
 
 .col-form-label{
@@ -169,6 +187,7 @@ border: black solid 2px;
   font-size: 18px;
   width: 70%;
   margin: 0 auto;
+  text-align: center;
 }
 
 .ouclass{

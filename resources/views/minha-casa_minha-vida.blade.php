@@ -13,7 +13,7 @@
 
     </head>
     
-    <body class="gradient-background">
+    <body class="gradient-background_mcmv">
         <header class="d-block col-12">
             <div class="cover-header-blur d-block mx-auto col-12"></div>
             <div class="cover-header text-center mx-auto d-block col-sm-12 col-md-8 col-lg-8 col-xl-8">
@@ -41,10 +41,10 @@
                 </ul>
             </div>
             <div class="contact text-center col-sm-12 col-md-8 col-lg-6 col-xl-6 mx-auto">
-                <a href="https://wa.me/5553984734353?text=Ol%C3%A1!%20Tudo%20bem%20?%20Vi%20seu%20v%C3%ADdeo%20sobre%20casas%20e%20apartamentos%20com%20entrada%20zero,%20gostaria%20de%20mais%C2%A0informa%C3%A7%C3%B5es." target="_blank" class="text-decoration-none text-black"><button type="button" class="btn btn-light contact-button gradient-button">Fale comigo no whatsapp!</button></a>
-                <h2 class="text-white ouclass">OU</h2>
-                <p class="text-white text-page">Cadastre-se que eu pessoalmente entrarei em contato com você o quanto antes.</p>
-                <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-light contact-button gradient-button mb-4 mt-2">Envie-me sua dúvida que entrarei em contato!</button>
+                {{-- <a href="https://wa.me/5553984734353?text=Ol%C3%A1!%20Tudo%20bem%20?%20Vi%20seu%20v%C3%ADdeo%20sobre%20casas%20e%20apartamentos%20com%20entrada%20zero,%20gostaria%20de%20mais%C2%A0informa%C3%A7%C3%B5es." target="_blank" class="text-decoration-none text-black"><button type="button" class="btn btn-light contact-button gradient-button">Fale comigo no whatsapp!</button></a> --}}
+                {{-- <h2 class="text-white ouclass">OU</h2> --}}
+                <p class="text-white text-page">Cadastre-se agora que entrarei em contato o quanto antes com mais informações, fotos e vídeos do empreendimento.</p>
+                <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-light contact-button gradient-button mb-4 mt-2">Clique aqui</button>
             </div>
 
             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -98,10 +98,10 @@
                         </div>
                     </div>
                     <div class="mb-3">
-                        <label for="messageText" class="col-form-label">Mensagem:</label>
+                        <label for="messageText" class="col-form-label">Mensagem: (Opcional)</label>
                         <div class="input-group">
                             <i class="bi bi-chat-square-text input-icons p-2 input-group-text"></i>
-                            <textarea class="form-control" name="messageText" id="messageText" style="height: 300px" placeholder="Descreva suas preferências e necessidades para que eu possa oferecer as melhores opções..." required></textarea>
+                            <textarea class="form-control" name="messageText" id="messageText" style="height: 300px" placeholder="Descreva suas preferências e necessidades para que eu possa oferecer as melhores opções..."></textarea>
                             <div class="valid-feedback valid-message">
                                 Ótimo!
                             </div>
