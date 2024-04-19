@@ -44,7 +44,7 @@
                 {{-- <a href="https://wa.me/5553984734353?text=Ol%C3%A1!%20Tudo%20bem%20?%20Vi%20seu%20v%C3%ADdeo%20sobre%20casas%20e%20apartamentos%20com%20entrada%20zero,%20gostaria%20de%20mais%C2%A0informa%C3%A7%C3%B5es." target="_blank" class="text-decoration-none text-black"><button type="button" class="btn btn-light contact-button gradient-button">Fale comigo no whatsapp!</button></a> --}}
                 {{-- <h2 class="text-white ouclass">OU</h2> --}}
                 <p class="text-white text-page">Cadastre-se agora que entrarei em contato o quanto antes com mais informações, fotos e vídeos do empreendimento.</p>
-                <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-light contact-button gradient-button mb-4 mt-2">Clique aqui</button>
+                <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-light contact-button gradient-button mb-4 mt-2">Faça seu cadastro aqui</button>
             </div>
 
             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
