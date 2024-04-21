@@ -27,22 +27,23 @@ class SendmailController extends Controller
             Certifique-se de preencher todos dados corretamente!")</script>';
         }
     }
-    public function mailDataConfirm($formData){
-        // TODO: trazer o alert para o try/cat
-        try {
-            Mail::to($formData['email'])->send(new SendMailConfirmation($formData)); // Enviar para o email preenchido no campo
+    // Email de confirmação para email dgitado no campo
+    // public function mailDataConfirm($formData){
+    //     // TODO: trazer o alert para o try/cat
+    //     try {
+    //         Mail::to($formData['email'])->send(new SendMailConfirmation($formData)); // Enviar para o email preenchido no campo
                
-        } catch (Exception $e) {
-            echo '<script>alert("Seu email não foi enviado!\n
-            Certifique-se de preencher todos dados corretamente!")</script>';
-        }
-    }
+    //     } catch (Exception $e) {
+    //         echo '<script>alert("Seu email não foi enviado!\n
+    //         Certifique-se de preencher todos dados corretamente!")</script>';
+    //     }
+    // }
 
     public function store(Request $request)
 
     {
         $name = $request->name;
-        $email = $request->email;
+        // $email = $request->email;
         $telefone = $request->telefone;
         $onlynumbers = $request->telefone;
         $messageText = $request->messageText;
@@ -52,17 +53,17 @@ class SendmailController extends Controller
 
         $data = [
             'name' => $name,
-            'email' => $email,
+            // 'email' => $email,
             'telefone' => $telefone,
             'messageText' => $messageText,
             'onlynumbers' => $onlynumbers,
             'targetClient' => $targetClient
         ];
 
-        $message = "Sua mensagem foi enviada! Te enviei um email de confirmação! Verfique sua caixa de entrada. Obrigado!";
+        $message = "Sua mensagem foi enviada! Entrarei em contato em breve. Obrigado!";
 
         $this->mailData($data);
-        $this->mailDataConfirm($data);
+        // $this->mailDataConfirm($data);
 
         if($targetClient == "Geral"){
             return redirect()->route('obrigado');

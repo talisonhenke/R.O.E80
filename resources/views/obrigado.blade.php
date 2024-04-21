@@ -26,7 +26,7 @@
                             <h5 class="card-header">Obrigado!</h5>
                             <div class="card-body">
                             <h5 class="card-title">Confirmação</h5>
-                            <p class="card-text">Sua mensagem foi enviada! Te enviei um email de confirmação! Verfique sua caixa de entrada. Obrigado!</p>
+                            <p class="card-text">Sua mensagem foi enviada! Entrarei em contato em breve. Obrigado!</p>
                             <a onmousedown="window.location='/'" class="btn btn-primary">Voltar para o início</a>
                             </div>
                         </div>

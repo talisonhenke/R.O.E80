@@ -71,7 +71,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="mb-3">
+                    {{-- Campo de email --}}
+                    {{-- <div class="mb-3">
                         <label for="email" class="col-form-label">E-mail:</label>
                         <div class="input-group">
                             <i class="bi bi-at input-icons p-2 input-group-text"></i>
@@ -83,7 +84,7 @@
                                 Insira seu e-mail nesse campo.
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
                     <div class="mb-3">
                         <label for="email" class="col-form-label">Telefone:</label>
                         <div class="input-group">
